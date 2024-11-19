@@ -582,7 +582,7 @@ Cảm ơn các bạn đã ghé thăm và đọc bài viết của mình!!!
                       </form>
                       <div class="github-button">
                       <button>
-                      <a href="https://github.com/Loccx78vn" target="_blank" style="color: white; text-decoration: none;">
+                      <a href="https://github.com/Loccx78vn/modeltime_in_R" target="_blank" style="color: white; text-decoration: none;">
                       <i class="fab fa-github"></i> View Code on GitHub
                     </a>
                       </button>
