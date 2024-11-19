@@ -1,0 +1,143 @@
+---
+title: "Cao Xuân Lộc"
+toc: false
+format:
+  html:
+    includes:
+      in_header: header.html
+about:
+  template: solana
+  image: img/ava.jpg
+  links:
+    - text: "<i class='fas fa-envelope'></i> Email"
+      href: "mailto:loccaoxuan103@gmail.com"
+    - text: "<i class='fab fa-github'></i> GitHub"
+      href: "https://github.com/Loccx78vn/"
+    - text: "<i class='fab fa-r-project'></i> Another projects"
+      href: "https://rpubs.com/loccx"
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+Xin chào, mình là Lộc, sinh năm 2003 và là một chàng trai đến từ mảnh đất đầy nắng và gió - Phú Yên, Việt Nam. Mình có bằng cử nhân trường Đại học Kinh Tế - Tài Chính (UEF) và chuyên ngành của mình là Logistics và quản lý chuỗi cung ứng.
+
+Là người có niềm đam mê mạnh mẽ với R, mình có sở thích viết post về việc phân tích dữ liệu với R để ứng dụng vào các công việc, bài toán thường gặp trong **Supply Chain**. Ngoài ra, sở thích của mình là nghe sách nói và đi bộ!
+
+Câu *slogan* mà mình thích nhất là: **"Don’t fear the risk, fear the opportunity lost!"** và đó cũng là cách mình sống và làm việc đến bây giờ 💝💝💝.
+
+Hi vọng các bạn sẽ thích bài viết của mình!
+
+
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go to Next Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Tahoma', sans-serif;
+            display: flex;
+            flex-direction: column;  /* Stack content and footnote vertically */
+            justify-content: center;  /* Center content vertically */
+            align-items: center;      /* Center content horizontally */
+            margin: 0;
+            background-color: $secondary-color;
+            box-sizing: border-box;
+            min-height: 80vh; /* Adjusted to 80vh to ensure it's not too high */
+        }
+
+        /* Container Styling (Main Content) */
+        .container {
+            text-align: center;
+            padding: 20px 40px; /* Adjust padding for more compactness */
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: auto;  /* Auto width to fit content */
+            max-width: 380px;  /* Adjusted max-width for a smaller container */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;  /* Space from the top of the page */
+        }
+
+        /* Link Styling */
+        .link {
+            font-size: 20px;  /* Adjusted font size for readability */
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 12px 30px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .link:hover {
+            color: #0056b3;
+            text-decoration: none;
+            background-color: #e6f0ff;
+        }
+
+        /* Arrow Styling */
+        .arrow {
+            margin-left: 12px;
+            font-size: 24px;
+            transition: transform 0.3s ease, font-size 0.3s ease;
+        }
+
+        .link:hover .arrow {
+            transform: translateX(8px);
+            font-size: 26px;
+        }
+
+        /* Focus State for Accessibility */
+        .link:focus {
+            outline: 2px solid #0056b3;
+        }
+
+        /* Footer Styling (Footnote) */
+        .footer {
+            font-size: 14px;
+            color: #777;
+            margin-top: 20px;  /* Space between content and footnote */
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Mobile-Friendly Adjustments */
+        @media (max-width: 600px) {
+            .link {
+                font-size: 18px;
+                padding: 8px 15px;  /* Smaller padding for mobile devices */
+            }
+
+            .arrow {
+                font-size: 18px;
+                margin-left: 8px;
+            }
+
+            .container {
+                padding: 15px 30px;  /* Smaller padding on mobile */
+                max-width: 90%;  /* Ensure container fits better on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://loccx78vn.github.io/modeltime_in_R/Time_series_2.html" class="link" tabindex="0">
+            Go to Next Page
+            <span class="arrow">➔</span>
+        </a>
+    </div>
+</body>
+</html>
+```

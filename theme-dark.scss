@@ -1,0 +1,178 @@
+/*-- scss:defaults --*/
+/* Default font settings */
+$font-family-base: "Tahoma", sans-serif;  // Change to Tahoma
+$font-family-heading: "Tahoma", sans-serif;  // Change to Tahoma
+$primary-color: #61dafb; /* Light blue color for footnotes */
+$secondary-color: #f9f9f9; /* Light text color */
+$bg-color-light: #2e2e2e; /* Dark background for footnotes */
+$bg-color-dark: #333333; /* Darker background for footnotes */
+
+/*-- scss:mixins --*/
+/* Mixin for smooth transition */
+@mixin smooth-transition($properties...) {
+  transition: $properties 0.3s ease;
+}
+
+/*-- scss:rules --*/
+/* General body styles */
+body {
+  font-family: $font-family-base;  // Tahoma applied here
+  font-size: 1rem;
+  line-height: 1.6;
+  color: $secondary-color;
+  background-color: black;
+}
+
+/* Footnote styles */
+.footnote {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: $secondary-color;
+  background-color: $bg-color-light; /* Light grey background for footnotes */
+  padding: 10px;
+  border-left: 4px solid $primary-color; /* Blue left border */
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-top: 1px dashed #ccc; /* Dashed top border */
+}
+
+/* Hover effect for footnote container */
+.footnote:hover {
+  background-color: #e9f3ff; /* Light blue background on hover */
+  border-left-color: darken($primary-color, 10%); /* Darker blue border on hover */
+  transform: scale(1.02); /* Slightly enlarge the footnote */
+}
+
+/* Style footnote references (the number in the text) */
+.footnote-ref {
+  color: $primary-color;
+  font-weight: bold;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+    color: darken($primary-color, 10%);
+  }
+}
+
+/* Footnote backlink (number link to the text) */
+.footnote-backlink {
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+    color: darken($primary-color, 10%);
+  }
+}
+
+/* Numbered footnote style */
+.footnote-number {
+  color: $primary-color;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Footnote popup box for inline content */
+.footnote-popup {
+  background-color: #fffcf7;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid $primary-color;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Footnote popup hover effect */
+.footnote-popup:hover {
+  background-color: #f0f8ff; /* Light blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the popup */
+}
+
+/*-- Theme dark --*/
+/* Dark theme footnotes */
+.theme-darkly .footnote {
+  background-color: #333333; /* Dark background for footnotes in dark theme */
+  color: #f9f9f9; /* Light text color */
+  border-left-color: #61dafb; /* Lighter blue border */
+}
+
+.theme-darkly .footnote:hover {
+  background-color: #444444;
+  border-left-color: #007bff;
+}
+
+.theme-darkly .footnote-ref {
+  color: #61dafb; /* Light blue color for footnote reference in dark mode */
+}
+
+.theme-darkly .footnote-backlink {
+  color: #61dafb;
+}
+
+.theme-darkly .footnote-number {
+  color: #61dafb;
+}
+
+/*-- scss:defaults --*/
+// Base document colors
+$body-bg: white;
+$link-color: #2ba2f9;
+
+/*-- Define Bootstrap color variable--*/
+// Code blocks
+$code-block-bg: #fbe576;
+//
+$code-color: #0d45b4;
+
+// Font settings
+$font-family-sans-serif: "Tahoma", sans-serif; // Change to Tahoma
+$fontsize: 13px; /* Base font size */
+
+/*-- scss:rules --*/
+
+h1.page-title {
+  color: black !important;
+  font-family: Tahoma, sans-serif;  // Tahoma applied here
+}
+
+h1, .h1, h2, .h2 {
+  color: #0d45b4;
+  font-family: Tahoma, sans-serif; // Tahoma applied here
+}
+
+h3, .h3 {
+  color: #7d9fe0;
+  font-family: Tahoma, sans-serif; // Tahoma applied here
+}
+
+h4, .h4 {
+  color: #0f81c2;
+  font-family: Tahoma, sans-serif; // Tahoma applied here
+}
+
+/* Highlight italic text */
+i, em {
+  color: #ff9d01; /* Change to your desired text color */
+}
+
+.divider {
+  height: 2px; /* Adjust thickness as needed */
+  background-color: black; /* Divider color */
+  margin: 20px 0; /* Spacing above and below the divider */
+}
+
+/* Code blocks */
+pre, code {
+  background-color: $code-block-bg;
+  color: $code-color;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Courier New", monospace;
+}

@@ -6,14 +6,9 @@ website:
   title: "Time series model 2"
   navbar:
     left:
+      - href: index.qmd
+        text: Home
       - href: Time_series_2.qmd
-    tools:
-      - icon: github
-        text: Github
-        href: https://github.com/Loccx78vn/Forecasting_time_series_2
-      - icon: twitter
-        text: Another projects
-        href: https://rpubs.com/loccx
   page-footer:
     right: "Built with [Quarto](https://quarto.org/)"
     left: "&copy; Copyright 2024, Loc cao"
@@ -21,8 +16,8 @@ website:
 format:
   html:
     theme: 
-      light: flatly
-      dark: darkly
+      light: theme-light.scss
+      dark: theme-dark.scss
     toc: true
 
 editor: source
